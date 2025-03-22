@@ -1,0 +1,338 @@
+h1 {
+  background: url(./assets/red.jpg);
+  font-style: oblique;
+  color: red;
+  background-repeat: no-repeat;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+h2 {
+  text-align: center;
+  font-style: oblique;
+  color: red;
+}
+
+body {
+  margin: 0px;
+  background: radial-gradient(circle, rgba(0,0,0,1) 0%, 
+  rgba(255,0,0,1) 100%);
+  box-sizing: border-box;
+}
+
+.hobbies-section {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hobbies-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.45);
+  color: red;
+  width: 900px;
+  border-radius: 20px;
+}
+
+.works-section {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.works-container {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.45);
+  color: red;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 900px;
+  border-radius: 20px;
+}
+
+.works-container a {
+  color: red;
+}
+
+.works-container a:hover {
+  color: blue;
+}
+
+.testimonials-section {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials-container {
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 15px;
+  width: 860px;
+}
+
+.testimonials-container h2 {
+  color: red;
+}
+
+.comment-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.comment-box {
+  width: 250px;
+  background-color: red;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.gallery-section {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-container {
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 15px;
+  width: 900px;
+  padding: 20px;
+}
+
+.img-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  width: 100%;
+}
+
+.img-container img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.img-container img:hover {
+  transform: scale(1.10);
+}
+
+.contact-section {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  background-color: rgba(0, 0, 0, 0.45);
+  width: 900px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container a {
+  color: red;
+}
+
+.contact-container a:hover {
+  color: blue;
+}
+
+.goals-section {
+  max-width: 800px;
+  margin: auto;
+  padding: 5px 30px 25px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.45);
+  box-sizing: border-box;
+}
+
+.goals-container {
+  background-color: red;
+  border-radius: 10px;
+  padding: 10px
+}
+
+.comment-section {
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 15px 20px 15px;
+}
+
+.goal-item {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 15px;
+  border-radius: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: red;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin: auto;
+}
+
+.goal-item {
+  padding: 5px;
+}
+
+.goal-item p {
+  font-size: 20px;
+}
+
+.teammate-comment {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.comment-item {
+  width: 200px;
+  background-color: red;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* Mobile S */
+@media (max-width: 320px) {
+  h1 {
+    height: 70px;
+    font-size: 24px;
+  }
+  
+  .hobbies-container,
+  .works-container,
+  .testimonials-container,
+  .gallery-container,
+  .contact-container,
+  .goals-container {
+    width: 90%;
+    padding: 10px;
+  }
+  
+  .img-container {
+    grid-template-columns: 1fr;
+  }
+
+  .teammate-comment {
+    width: 90%;
+    gap: 10px;
+    margin: auto;
+  }
+
+  .comment-box,
+  .comment-item {
+    width: 100%;
+  }
+}
+
+/* Mobile M */
+@media (min-width: 321px) and (max-width: 375px) {
+  h1 {
+    height: 80px;
+    font-size: 26px;
+  }
+  
+  .hobbies-container,
+  .works-container,
+  .testimonials-container,
+  .gallery-container,
+  .contact-container,
+  .goals-container {
+    width: 90%;
+    padding: 12px;
+  }
+
+  .img-container {
+    grid-template-columns: 1fr;
+  }
+
+  .teammate-comment {
+    width: 90%;
+  }
+
+  .comment-box,
+  .comment-item {
+    width: 90%;
+  }
+}
+
+/* Mobile L */
+@media (min-width: 376px) and (max-width: 425px) {
+  h1 {
+    height: 90px;
+    font-size: 28px;
+  }
+
+  .hobbies-container,
+  .works-container,
+  .testimonials-container,
+  .gallery-container,
+  .contact-container,
+  .goals-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .img-container {
+    grid-template-columns: 1fr;
+  }
+
+  .teammate-comment {
+    width: 90%;
+    gap: 15px;
+  }
+
+  .comment-box,
+  .comment-item {
+    width: 90%;
+  }
+}
