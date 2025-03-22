@@ -167,7 +167,7 @@
                     <h3>Comments</h3>
                     <div class="comment-box">
                         <span class="commenter">Ivan Delumen</span>
-                        <p>
+                        <p class="comments">
                             Your goals reflect a deep passion for growth and
                             impact, and the way you relentlessly pursue them
                             shows just how powerful your ambition is. You’re
@@ -177,7 +177,7 @@
                     </div>
                     <div class="comment-box">
                         <span class="commenter">Simone Reyes</span>
-                        <p>
+                        <p class="comments">
                             Keep pushing forward! Your hard work and dedication
                             don’t go unnoticed. Every challenge is just another
                             step toward success. Let’s give it our
@@ -186,7 +186,7 @@
                     </div>
                     <div class="comment-box">
                         <span class="commenter">Gerald Mamasalanang</span>
-                        <p>
+                        <p class="comments">
                             Your commitment to learning and growth is truly
                             inspiring. Your goals are ambitious, but with your
                             drive and dedication, I have no doubt you’ll
@@ -211,8 +211,11 @@
                                 id="comment_box">
                             </textarea>
                         </div>
-                        <button type="submit" id="comment_btn" disabled>
-                            Comment
+                        <button 
+                            type="button" 
+                            id="comment_btn" 
+                            onclick="addComment()">
+                              Comment
                         </button>
                     </form>
                 </div>
