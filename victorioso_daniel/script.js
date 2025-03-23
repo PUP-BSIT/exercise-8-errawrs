@@ -9,26 +9,12 @@ inputName.addEventListener("input", checkRequirements);
 inputComment.addEventListener("input", checkRequirements);
 
 function checkRequirements() {
-    const isNameValid = inputName.value.trim() !== "";
-    const isCommentValid = inputComment.value.trim() !== "";
+    const isNameValid = inputName.value.trim();
+    const isCommentValid = inputComment.value.trim(); 
 
-    if (isNameValid && isCommentValid) {
-        enableCommentButton();
-    } else {
-        disableCommentButton();
-    }
-}
-
-function enableCommentButton() {
-    commentBtn.disabled = false;
-    commentBtn.classList.remove("disabled");
-    commentBtn.classList.add("enabled");
-}
-
-function disableCommentButton() {
-    commentBtn.disabled = true;
-    commentBtn.classList.remove("enabled");
-    commentBtn.classList.add("disabled");
+    commentBtn.disabled = !(isNameValid && isCommentValid);
+    commentBtn.classList.toggle("enabled", isNameValid && isCommentValid);
+    commentBtn.classList.toggle("disabled", !(isNameValid && isCommentValid));
 }
 
 function addComment() {
@@ -37,7 +23,7 @@ function addComment() {
 
     const commentContainer = createCommentElement(commenter, comment);
 
-    commentSection.append(commentContainer);
+    commentSection.appendChild(commentContainer);
 
     clearInputFields();
     disableCommentButton();
@@ -55,8 +41,8 @@ function createCommentElement(commenter, comment) {
     commentInput.classList.add("comments");
     commentInput.textContent = comment;
 
-    commentContainer.append(commentNameSpan);
-    commentContainer.append(commentInput);
+    commentContainer.appendChild(commentNameSpan);
+    commentContainer.appendChild(commentInput);
 
     return commentContainer;
 }
@@ -64,4 +50,10 @@ function createCommentElement(commenter, comment) {
 function clearInputFields() {
     inputName.value = "";
     inputComment.value = "";
+}
+
+function disableCommentButton() {
+    commentBtn.disabled = true;
+    commentBtn.classList.remove("enabled");
+    commentBtn.classList.add("disabled");
 }
