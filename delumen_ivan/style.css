@@ -174,14 +174,14 @@ body {
 }
 
 .comment-section {
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: red;
   padding: 20px;
   border-radius: 10px;
   margin: 20px 15px 20px 15px;
 }
 
 .goal-item {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: red;
   margin: 15px;
   border-radius: 10px;
 }
