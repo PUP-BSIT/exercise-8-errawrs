@@ -83,10 +83,6 @@ body {
   width: 860px;
 }
 
-.testimonials-container h2 {
-  color: red;
-}
-
 .comment-container {
   display: flex;
   justify-content: center;
