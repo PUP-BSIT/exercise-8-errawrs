@@ -241,6 +241,16 @@ button {
   margin-bottom: 10px;
 }
 
+.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.enable {
+  background-color: black;
+  cursor: pointer;
+}
+
 /* Mobile S */
 @media (max-width: 320px) {
   h1 {
