@@ -176,6 +176,10 @@ body {
   margin: 20px 15px 20px 15px;
 }
 
+.comment-section h2 {
+  color: black;
+}
+
 .goal-item {
   background-color: red;
   margin: 15px;
