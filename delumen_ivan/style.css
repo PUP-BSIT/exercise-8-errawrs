@@ -167,9 +167,10 @@ body {
 }
 
 .goals-container {
-  background-color: red;
+  background-color: rgba(0, 0, 0, 0.45);
   border-radius: 10px;
-  padding: 10px
+  padding: 15px;
+  width: 800px;
 }
 
 .comment-section {
