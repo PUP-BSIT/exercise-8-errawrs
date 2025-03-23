@@ -159,12 +159,11 @@ body {
 }
 
 .goals-section {
-  max-width: 800px;
-  margin: auto;
-  padding: 5px 30px 25px;
+  padding: 10px;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.45);
-  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .goals-container {
