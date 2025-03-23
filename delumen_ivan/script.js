@@ -2,7 +2,7 @@ let input = document.querySelector(".name");
 let button = document.querySelector(".submit-button");
 let textarea = document.querySelector("textarea");
 
-input.addEventListener("change", stateHandle);
+input.addEventListener("", stateHandle);
 textarea.addEventListener("input", stateHandle);
 
 function stateHandle() {
