@@ -139,7 +139,7 @@ body {
   width: 100%;
 }
 
-section {
+.section {
   margin-bottom: 50px;
   padding: 20px;
   background-color: var(--secondary-color);
@@ -152,7 +152,7 @@ section {
   transition: transform 0.3s ease;
 }
 
-section:hover {
+.section:hover {
   transform: translateY(-5px);
 }
 
@@ -248,6 +248,7 @@ h2::after {
 
 .comments{
   margin-left: 3em;
+  font-style: italic;
 }
 
 /* Comment button styles */
@@ -542,7 +543,7 @@ img {
     height: 150px;
   }
 
-  section {
+  .section {
     scroll-margin-top: 10px;
     padding: 15px 10px;
     margin-bottom: 20px;
@@ -599,7 +600,7 @@ img {
     font-size: 24px;
   }
 
-  section {
+  .section {
     scroll-margin-top: 100px;
     padding: 15px 10px;
     margin-bottom: 20px;
@@ -640,7 +641,7 @@ img {
     grid-template-columns: 1fr;
   }
 
-  section {
+  .section {
     scroll-margin-top: 90px;
     padding: 15px 10px;
   }
