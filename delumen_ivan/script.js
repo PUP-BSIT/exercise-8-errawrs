@@ -7,10 +7,12 @@ textarea.addEventListener("input", stateHandle);
 
 function stateHandle() {
   if (input.value && textarea.value) {
-    button.disabled = true;
+    button.disabled = false;
+    button.classList.remove("disabled");
     button.classList.add("enable");
   } else {
-    button.disabled = false;
-    button.classList.add("disable");
+    button.disabled = true;
+    button.classList.remove("enable");
+    button.classList.add("disabled")
   }
 }
