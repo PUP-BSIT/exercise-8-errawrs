@@ -229,6 +229,7 @@ button {
   gap: 10px;
   box-sizing: border-box;
   flex-wrap: wrap;
+  margin: 20px;
 }
 
 .comment-item {
