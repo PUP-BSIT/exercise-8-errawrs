@@ -24,14 +24,13 @@ function checkValue() {
 function addComment() {
   let commentContainer = document.createElement('div');
   commentContainer.classList.add("comment-item");
+  commentSection.append(commentContainer);
+
+  let commentText = document.createElement("p");
+  commentText.innerHTML = textarea.value;
+  commentContainer.append(commentText);
 
   let commentName = document.createElement('strong');
   commentName.innerHTML = input.value;
-
-  let commentText = document.createElement('p');
-  commentText.innerHTML = textarea.value
-
-  commentSection.append(commentContainer);
-  commentContainer.append(commentText);
   commentContainer.append(commentName);
 }
