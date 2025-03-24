@@ -1,13 +1,11 @@
 body {
-    background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,1) 0%, 
-    rgba(255,0,0,1) 100%);
+    background-color: green;
     margin: 0;
     padding: 0;
 }
 
 h2 {
-    color: red;
+    color: yellow;
     font-size: 40px;
     margin: 5px;
     padding: 5px;
@@ -18,7 +16,7 @@ h2 {
     max-width: 500px;
     margin: 50px auto;
     background: transparent;
-    border: 5px solid black;
+    border: 5px solid darkblue;
     border-radius: 25px;
     box-shadow: inset -5px -5px rgba(0, 0, 0, 0.5);
     padding: 20px;
@@ -40,8 +38,8 @@ h2 {
     width: 100%;
     padding: 12px;
     border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: red;
+    background-color: darkblue;
+    color: yellow;
     font-size: 20px;
     border: none;
     box-sizing: border-box;
@@ -56,8 +54,8 @@ h2 {
     width: 100%;
     padding: 12px;
     border-radius: 15px;
-    background-color: red;
-    color: white;
+    background-color: darkblue;
+    color: yellow;
     font-size: 20px;
     cursor: pointer;
     border: none;
