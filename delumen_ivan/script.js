@@ -10,7 +10,7 @@ function checkValue() {
   } else {
     button.disabled = true;
     button.classList.remove("enable");
-    button.classList.add("disabled")
+    button.classList.add("disabled");
   }
 }
 
