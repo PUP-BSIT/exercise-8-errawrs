@@ -11,7 +11,10 @@ body {
   background-color: #f9f9f9;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-style: oblique;
   margin-bottom: 1rem;
@@ -163,6 +166,104 @@ h2::after {
   color: #eebd89;
 }
 
+/* Goals Section */
+.goals {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.goals-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.goal-item {
+  background: linear-gradient(135deg, #f9f9f9, #f0f0f0);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid #d13abd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.goal-item:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.goal-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.goal-item h3 {
+  color: #d13abd;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.goal-item p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Goal Comments Section */
+.goal-comments {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px dashed #ccc;
+}
+
+.goal-comments h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.goal-comment-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.goal-comment-form button[type="submit"] {
+  background-image: linear-gradient(to right, #d13abd, #eebd89);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 10px rgba(209, 58, 189, 0.3);
+}
+
+.goal-comment-form button[type="submit"]:hover:not([disabled]) {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 15px rgba(209, 58, 189, 0.4);
+}
+
+.goal-comment-form button[type="submit"]:disabled {
+  background-image: linear-gradient(to right, #cccccc, #999999);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
 /* Testimonials Section */
 .testimonials {
   background-color: #f8f8f8;
@@ -301,7 +402,9 @@ label {
   font-weight: bold;
 }
 
-input[type="text"], input[type="email"], textarea {
+input[type="text"],
+input[type="email"],
+textarea {
   width: 100%;
   padding: 12px 15px;
   border: 1px solid #ddd;
@@ -310,7 +413,9 @@ input[type="text"], input[type="email"], textarea {
   transition: all 0.3s ease;
 }
 
-input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
   outline: none;
   border-color: #d13abd;
   box-shadow: 0 0 0 3px rgba(209, 58, 189, 0.1);
@@ -343,6 +448,59 @@ button[type="submit"]:active {
   box-shadow: 0 3px 8px rgba(209, 58, 189, 0.4);
 }
 
+/* Goal Teammates Comments Section */
+.existing-comments {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px dashed #ccc;
+}
+
+.existing-comments h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.teammate-comment {
+  background-image: linear-gradient(135deg, #eebd89, #d13abd);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.teammate-comment:hover {
+  transform: translateY(-10px);
+}
+
+.teammate-comment p {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.teammate-comment p::before {
+  content: '"';
+  position: absolute;
+  top: -20px;
+  left: -5px;
+  font-size: 60px;
+  color: rgba(255, 255, 255, 0.2);
+  font-family: Georgia, serif;
+}
+
+.teammate-comment span {
+  display: block;
+  text-align: right;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+}
+
 /* Footer */
 .footer {
   background-color: #333;
@@ -371,7 +529,12 @@ button[type="submit"]:active {
     height: 2px;
   }
 
-  .interests, .works, .testimonials, .gallery, .contact {
+  .interests,
+  .works,
+  .goals,
+  .testimonials,
+  .gallery,
+  .contact {
     padding: 18px 10px;
     margin-bottom: 20px;
   }
@@ -379,6 +542,18 @@ button[type="submit"]:active {
   .interests .my-list li {
     padding: 8px 12px;
     font-size: 0.8rem;
+  }
+
+  .goals-container {
+    grid-template-columns: 1fr;
+  }
+
+  .goal-icon {
+    font-size: 2rem;
+  }
+
+  .goal-item h3 {
+    font-size: 1.2rem;
   }
 
   .gallery-grid {
@@ -402,7 +577,9 @@ button[type="submit"]:active {
     top: -15px;
   }
 
-  input[type="text"], input[type="email"], textarea {
+  input[type="text"],
+  input[type="email"],
+  textarea {
     padding: 8px 10px;
     font-size: 13px;
   }
@@ -410,6 +587,27 @@ button[type="submit"]:active {
   button[type="submit"] {
     padding: 10px 20px;
     font-size: 14px;
+  }
+
+  .existing-comments h3 {
+    font-size: 1.2rem;
+  }
+
+  .teammate-comment {
+    padding: 18px 12px;
+  }
+
+  .teammate-comment p {
+    font-size: 0.85rem;
+  }
+
+  .teammate-comment p::before {
+    font-size: 35px;
+    top: -15px;
+  }
+
+  .teammate-comment span {
+    font-size: 0.8rem;
   }
 }
 
@@ -433,7 +631,12 @@ button[type="submit"]:active {
     height: 2px;
   }
 
-  .interests, .works, .testimonials, .gallery, .contact {
+  .interests,
+  .works,
+  .goals,
+  .testimonials,
+  .gallery,
+  .contact {
     padding: 20px 12px;
     margin-bottom: 25px;
   }
@@ -441,6 +644,10 @@ button[type="submit"]:active {
   .interests .my-list li {
     padding: 10px 15px;
     font-size: 0.85rem;
+  }
+
+  .goals-container {
+    grid-template-columns: 1fr;
   }
 
   .gallery-grid {
@@ -464,7 +671,9 @@ button[type="submit"]:active {
     top: -15px;
   }
 
-  input[type="text"], input[type="email"], textarea {
+  input[type="text"],
+  input[type="email"],
+  textarea {
     padding: 9px 12px;
     font-size: 14px;
   }
@@ -472,6 +681,23 @@ button[type="submit"]:active {
   button[type="submit"] {
     padding: 12px 22px;
     font-size: 15px;
+  }
+
+  .existing-comments h3 {
+    font-size: 1.3rem;
+  }
+
+  .teammate-comment {
+    padding: 20px 15px;
+  }
+
+  .teammate-comment p {
+    font-size: 0.9rem;
+  }
+
+  .teammate-comment p::before {
+    font-size: 40px;
+    top: -15px;
   }
 }
 
@@ -484,7 +710,7 @@ button[type="submit"]:active {
   .name h1 {
     font-size: 1.9rem;
   }
-  
+
   h2 {
     font-size: 1.5rem;
     margin-bottom: 0.8rem;
@@ -495,7 +721,12 @@ button[type="submit"]:active {
     height: 2px;
   }
 
-  .interests, .works, .testimonials, .gallery, .contact {
+  .interests,
+  .works,
+  .goals,
+  .testimonials,
+  .gallery,
+  .contact {
     padding: 22px 15px;
     margin-bottom: 28px;
   }
@@ -503,6 +734,10 @@ button[type="submit"]:active {
   .interests .my-list li {
     padding: 12px 18px;
     font-size: 0.9rem;
+  }
+
+  .goals-container {
+    grid-template-columns: 1fr;
   }
 
   .gallery-grid {
@@ -526,14 +761,33 @@ button[type="submit"]:active {
     top: -18px;
   }
 
-  input[type="text"], input[type="email"], textarea {
+  input[type="text"],
+  input[type="email"],
+  textarea {
     padding: 10px 14px;
     font-size: 15px;
   }
-  
+
   button[type="submit"] {
     padding: 12px 25px;
     font-size: 16px;
+  }
+
+  .existing-comments h3 {
+    font-size: 1.4rem;
+  }
+
+  .teammate-comment {
+    padding: 22px 18px;
+  }
+
+  .teammate-comment p {
+    font-size: 0.95rem;
+  }
+
+  .teammate-comment p::before {
+    font-size: 45px;
+    top: -18px;
   }
 }
 
@@ -568,6 +822,35 @@ button[type="submit"]:active {
   .works .my-list {
     grid-template-columns: 1fr;
   }
+
+  .goals-container {
+    grid-template-columns: 1fr;
+  }
+
+  .existing-comments h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .teammate-comment {
+    padding: 18px 15px;
+    margin-bottom: 15px;
+  }
+
+  .teammate-comment p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  .teammate-comment p::before {
+    font-size: 40px;
+    top: -15px;
+    left: -3px;
+  }
+
+  .teammate-comment span {
+    font-size: 0.85rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -579,7 +862,12 @@ button[type="submit"]:active {
     padding: 0 15px;
   }
 
-  .interests, .works .testimonials, .gallery, .contact {
+  .interests,
+  .works,
+  .goals,
+  .testimonials,
+  .gallery,
+  .contact {
     padding: 25px 15px;
     margin-bottom: 30px;
   }
@@ -589,7 +877,8 @@ button[type="submit"]:active {
     gap: 20px;
   }
 
-  .contact-form {
+  .contact-form,
+  .goal-comment-form {
     grid-template-columns: 1fr;
   }
 
@@ -601,5 +890,29 @@ button[type="submit"]:active {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
+  }
+
+  .existing-comments {
+    padding-top: 25px;
+    margin-top: 30px;
+  }
+
+  .existing-comments h3 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  .teammate-comment {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .teammate-comment p {
+    font-size: 0.95rem;
+  }
+
+  .teammate-comment p::before {
+    font-size: 50px;
+    top: -18px;
   }
 }
