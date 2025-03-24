@@ -15,10 +15,9 @@ h2 {
 .contact-form {
     max-width: 500px;
     margin: 50px auto;
-    background: transparent;
-    border: 5px solid darkblue;
+    background: darkblue;
+    border: 5px solid yellow;
     border-radius: 25px;
-    box-shadow: inset -5px -5px rgba(0, 0, 0, 0.5);
     padding: 20px;
 }
 
@@ -38,8 +37,8 @@ h2 {
     width: 100%;
     padding: 12px;
     border-radius: 20px;
-    background-color: darkblue;
-    color: yellow;
+    background-color: yellow;
+    color: darkblue;
     font-size: 20px;
     border: none;
     box-sizing: border-box;
@@ -54,8 +53,8 @@ h2 {
     width: 100%;
     padding: 12px;
     border-radius: 15px;
-    background-color: darkblue;
-    color: yellow;
+    background-color: yellow;
+    color: darkblue;
     font-size: 20px;
     cursor: pointer;
     border: none;
