@@ -14,13 +14,12 @@ h1 {
 h2 {
   text-align: center;
   font-style: oblique;
-  color: red;
+  color: darkblue;
 }
 
 body {
   margin: 0px;
-  background: radial-gradient(circle, rgba(0,0,0,1) 0%, 
-  rgba(255,0,0,1) 100%);
+  background-color: green;
   box-sizing: border-box;
 }
 
@@ -36,8 +35,8 @@ body {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.45);
-  color: red;
+  background-color: yellow;
+  color: darkblue;
   width: 900px;
   border-radius: 20px;
 }
@@ -51,8 +50,8 @@ body {
 
 .works-container {
   display: flex;
-  background-color: rgba(0, 0, 0, 0.45);
-  color: red;
+  background-color: yellow;
+  color: darkblue;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
@@ -61,11 +60,11 @@ body {
 }
 
 .works-container a {
-  color: red;
+  color: darkblue;
 }
 
 .works-container a:hover {
-  color: blue;
+  color: black;
 }
 
 .testimonials-section {
@@ -78,7 +77,7 @@ body {
 .testimonials-container {
   text-align: center;
   padding: 15px;
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: yellow;
   border-radius: 15px;
   width: 900px;
 }
@@ -92,7 +91,7 @@ body {
 
 .comment-box {
   width: 250px;
-  background-color: red;
+  background-color: blue;
   padding: 10px;
   border-radius: 15px;
   text-align: center;
@@ -105,7 +104,7 @@ body {
 }
 
 .gallery-container {
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: yellow;
   border-radius: 15px;
   width: 900px;
   padding: 20px;
@@ -138,7 +137,7 @@ body {
 }
 
 .contact-container {
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: yellow;
   width: 900px;
   border-radius: 20px;
   display: flex;
@@ -147,11 +146,11 @@ body {
 }
 
 .contact-container a {
-  color: red;
+  color: darkblue;
 }
 
 .contact-container a:hover {
-  color: blue;
+  color: black;
 }
 
 .goals-section {
@@ -163,25 +162,25 @@ body {
 }
 
 .goals-container {
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: yellow;
   border-radius: 10px;
   padding: 15px;
   width: 900px;
 }
 
 .comment-section {
-  background-color: red;
+  background-color: darkblue;
   padding: 20px;
   border-radius: 10px;
   margin: 20px 15px 20px 15px;
 }
 
 .comment-section h2 {
-  color: black;
+  color: yellow;
 }
 
 .goal-item {
-  background-color: red;
+  background-color: darkblue;
   margin: 15px;
   border-radius: 10px;
 }
@@ -194,8 +193,8 @@ input, textarea {
   border: none;
   font-size: 18px;
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: red;
+  background-color: yellow;
+  color: darkblue;
 }
 
 textarea {
@@ -222,7 +221,7 @@ button {
 
 .teammate-comment {
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: darkblue;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -234,7 +233,7 @@ button {
 
 .comment-item {
   width: 200px;
-  background-color: red;
+  background-color: yellow;
   padding: 10px;
   border-radius: 15px;
   text-align: center;
