@@ -212,7 +212,8 @@ textarea {
 
 button {
   width: 100%;
-  color: white;
+  font-size: 15px;
+  color: darkblue;
   border: none;
   padding: 10px 20px;
   border-radius: 4px;
@@ -257,13 +258,14 @@ button {
   margin-bottom: 10px;
 }
 
+
 .disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
 
 .enable {
-  background-color: black;
+  background-color: yellow;
   cursor: pointer;
 }
 
