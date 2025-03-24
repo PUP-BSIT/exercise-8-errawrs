@@ -2,10 +2,7 @@ let input = document.querySelector(".name");
 let button = document.querySelector(".submit-button");
 let textarea = document.querySelector("textarea");
 
-input.addEventListener("input", stateHandle);
-textarea.addEventListener("input", stateHandle);
-
-function stateHandle() {
+function checkValue() {
   if (input.value && textarea.value) {
     button.disabled = false;
     button.classList.remove("disabled");
@@ -16,3 +13,6 @@ function stateHandle() {
     button.classList.add("disabled")
   }
 }
+
+input.addEventListener("input", checkValue);
+textarea.addEventListener("input", checkValue);
