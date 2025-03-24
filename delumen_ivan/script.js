@@ -1,6 +1,6 @@
 let input = document.querySelector(".name");
-let button = document.querySelector(".submit-button");
 let textarea = document.querySelector("textarea");
+let button = document.querySelector(".submit-button");
 
 function checkValue() {
   if (input.value && textarea.value) {
