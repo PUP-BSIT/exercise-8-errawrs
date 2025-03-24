@@ -3,6 +3,8 @@ let textarea = document.querySelector("textarea");
 let button = document.querySelector(".submit-button");
 let commentSection = document.querySelector(".teammate-comment");
 
+button.classList.add("disabled");
+
 button.addEventListener('click', addComment);
 input.addEventListener('input', checkValue);
 textarea.addEventListener('input', checkValue);
