@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
@@ -15,7 +15,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: oblique;
     margin-bottom: 1rem;
 }
@@ -29,7 +29,7 @@ h2 {
 }
 
 h2::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -57,13 +57,13 @@ h2::after {
 }
 
 .name::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("./Assets/Images/bg_image.jpg");
+    background-image: url('./Assets/Images/bg_image.jpg');
     background-position: center;
     background-size: cover;
     filter: brightness(0.7);
@@ -74,7 +74,7 @@ h2::after {
     font-size: 3.5rem;
     color: white;
     text-shadow: -2px -2px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+        1px 1px 0 #000;
     transform: translateY(-10px);
     animation: fadeInDown 1s ease-out;
 }
@@ -237,7 +237,7 @@ h2::after {
     margin: 0 auto;
 }
 
-.goal-comment-form button[type="submit"] {
+.goal-comment-form button[type='submit'] {
     background-image: linear-gradient(to right, #d13abd, #eebd89);
     color: white;
     border: none;
@@ -252,12 +252,12 @@ h2::after {
     box-shadow: 0 4px 10px rgba(209, 58, 189, 0.3);
 }
 
-.goal-comment-form button[type="submit"]:hover:not([disabled]) {
+.goal-comment-form button[type='submit']:hover:not([disabled]) {
     transform: translateY(-3px);
     box-shadow: 0 7px 15px rgba(209, 58, 189, 0.4);
 }
 
-.goal-comment-form button[type="submit"]:disabled {
+.goal-comment-form button[type='submit']:disabled {
     background-image: linear-gradient(to right, #cccccc, #999999);
     cursor: not-allowed;
     transform: none;
@@ -402,8 +402,8 @@ label {
     font-weight: bold;
 }
 
-input[type="text"],
-input[type="email"],
+input[type='text'],
+input[type='email'],
 textarea {
     width: 100%;
     padding: 12px 15px;
@@ -413,15 +413,15 @@ textarea {
     transition: all 0.3s ease;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
+input[type='text']:focus,
+input[type='email']:focus,
 textarea:focus {
     outline: none;
     border-color: #d13abd;
     box-shadow: 0 0 0 3px rgba(209, 58, 189, 0.1);
 }
 
-button[type="submit"] {
+button[type='submit'] {
     grid-column: span 2;
     background-image: linear-gradient(to right, #eebd89, #d13abd);
     color: white;
@@ -438,12 +438,12 @@ button[type="submit"] {
     margin-top: 10px;
 }
 
-button[type="submit"]:hover {
+button[type='submit']:hover {
     transform: translateY(-3px);
     box-shadow: 0 7px 15px rgba(209, 58, 189, 0.4);
 }
 
-button[type="submit"]:active {
+button[type='submit']:active {
     transform: translateY(1px);
     box-shadow: 0 3px 8px rgba(209, 58, 189, 0.4);
 }
@@ -577,14 +577,14 @@ button[type="submit"]:active {
         top: -15px;
     }
 
-    input[type="text"],
-    input[type="email"],
+    input[type='text'],
+    input[type='email'],
     textarea {
         padding: 8px 10px;
         font-size: 13px;
     }
 
-    button[type="submit"] {
+    button[type='submit'] {
         padding: 10px 20px;
         font-size: 14px;
     }
@@ -671,14 +671,14 @@ button[type="submit"]:active {
         top: -15px;
     }
 
-    input[type="text"],
-    input[type="email"],
+    input[type='text'],
+    input[type='email'],
     textarea {
         padding: 9px 12px;
         font-size: 14px;
     }
 
-    button[type="submit"] {
+    button[type='submit'] {
         padding: 12px 22px;
         font-size: 15px;
     }
@@ -761,14 +761,14 @@ button[type="submit"]:active {
         top: -18px;
     }
 
-    input[type="text"],
-    input[type="email"],
+    input[type='text'],
+    input[type='email'],
     textarea {
         padding: 10px 14px;
         font-size: 15px;
     }
 
-    button[type="submit"] {
+    button[type='submit'] {
         padding: 12px 25px;
         font-size: 16px;
     }
@@ -883,7 +883,7 @@ button[type="submit"]:active {
     }
 
     .form-group.full-width,
-    button[type="submit"] {
+    button[type='submit'] {
         grid-column: 1;
     }
 
