@@ -10,16 +10,12 @@ input.addEventListener("input", checkValue);
 textarea.addEventListener("input", checkValue);
 
 function checkValue() {
-    if (!input.value.trim() || !textarea.value.trim()) {
-        button.disabled = true;
-        button.classList.toggle("enable", false);
-        button.classList.toggle("disable", true);
-        return;
-    }
-        button.disabled = false;
-        button.classList.toggle("disable", false);
-        button.classList.toggle("enable", true);
-    }
+    let = hasiValidInput = input.value.trim() && textarea.value.trim();
+
+        button.disabled = !hasValidInput;
+        button.classList.toggle("disabled", !hasValidInput);
+        button.classList.toggle("enabled", hasValidInput);
+}
 
 function addComment() {
     let commentContainer = document.createElement("div");
