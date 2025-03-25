@@ -34,6 +34,6 @@ function addComment() {
     textarea.value = "";
 
     button.disabled = true;
-    button.classList.toggle("enable", false);
-    button.classList.toggle("disable", true);
+    button.classList.remove("enable");
+    button.classList.add("disabled");
 }
