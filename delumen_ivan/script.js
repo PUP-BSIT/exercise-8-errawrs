@@ -5,32 +5,32 @@ let commentSection = document.querySelector(".teammate-comment");
 
 button.classList.add("disabled");
 
-button.addEventListener('click', addComment);
-input.addEventListener('input', checkValue);
-textarea.addEventListener('input', checkValue);
+button.addEventListener("click", addComment);
+input.addEventListener("input", checkValue);
+textarea.addEventListener("input", checkValue);
 
 function checkValue() {
-  if (input.value && textarea.value) {
-      button.disabled = false;
-      button.classList.remove("disabled");
-      button.classList.add("enable");
-  } else {
-      button.disabled = true;
-      button.classList.remove("enable");
-      button.classList.add("disabled");
-  }
+    if (input.value && textarea.value) {
+        button.disabled = false;
+        button.classList.remove("disabled");
+        button.classList.add("enable");
+    } else {
+        button.disabled = true;
+        button.classList.remove("enable");
+        button.classList.add("disabled");
+    }
 }
 
 function addComment() {
-  let commentContainer = document.createElement('div');
-  commentContainer.classList.add("comment-item");
-  commentSection.append(commentContainer);
+    let commentContainer = document.createElement("div");
+    commentContainer.classList.add("comment-item");
+    commentSection.append(commentContainer);
 
-  let commentText = document.createElement("p");
-  commentText.innerHTML = textarea.value;
-  commentContainer.append(commentText);
+    let commentText = document.createElement("p");
+    commentText.innerHTML = textarea.value;
+    commentContainer.append(commentText);
 
-  let commentName = document.createElement('strong');
-  commentName.innerHTML = input.value;
-  commentContainer.append(commentName);
+    let commentName = document.createElement("strong");
+    commentName.innerHTML = input.value;
+    commentContainer.append(commentName);
 }
