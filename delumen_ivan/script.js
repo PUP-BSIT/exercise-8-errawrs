@@ -10,16 +10,16 @@ input.addEventListener("input", checkValue);
 textarea.addEventListener("input", checkValue);
 
 function checkValue() {
-    if (input.value && textarea.value) {
-        button.disabled = false;
-        button.classList.remove("disabled");
-        button.classList.add("enable");
-    } else {
+    if (!input.value.trim() || !textarea.value.trim()) {
         button.disabled = true;
-        button.classList.remove("enable");
-        button.classList.add("disabled");
+        button.classList.toggle("enable", false);
+        button.classList.toggle("disable", true);
+        return;
     }
-}
+        button.disabled = false;
+        button.classList.toggle("disable", false);
+        button.classList.toggle("enable", true);
+    }
 
 function addComment() {
     let commentContainer = document.createElement("div");
@@ -33,4 +33,11 @@ function addComment() {
     let commentName = document.createElement("strong");
     commentName.innerHTML = input.value;
     commentContainer.append(commentName);
+
+    input.value = "";
+    textarea.value = "";
+
+    button.disabled = true;
+    button.classList.toggle("enable", false);
+    button.classList.toggle("disable", true);
 }
