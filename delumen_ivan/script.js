@@ -11,13 +11,13 @@ textarea.addEventListener('input', checkValue);
 
 function checkValue() {
   if (input.value && textarea.value) {
-    button.disabled = false;
-    button.classList.remove("disabled");
-    button.classList.add("enable");
+      button.disabled = false;
+      button.classList.remove("disabled");
+      button.classList.add("enable");
   } else {
-    button.disabled = true;
-    button.classList.remove("enable");
-    button.classList.add("disabled");
+      button.disabled = true;
+      button.classList.remove("enable");
+      button.classList.add("disabled");
   }
 }
 
