@@ -11,8 +11,7 @@ form.addEventListener("submit", handleSubmit);
 function validateForm() {
   if (commentTextarea.value.length && nameInput.value.length) {
     submitButton.disabled = false;
-  } else {
-    submitButton.disabled = true;
+    return  true;
   }
 }
 
@@ -38,4 +37,5 @@ function handleSubmit(event) {
   form.reset();
   validateForm();
 }
+
 validateForm();
