@@ -4,7 +4,7 @@ Team link:
 errawrs-v3.netlify.app
 
 Individual Link:
-Delumen - https://errawrs-v3.netlify.app/delumen_ivan/
+[![Delumen] (https://errawrs-v3.netlify.app/delumen_ivan/)]
 Mamasalanang - https://errawrs-v3.netlify.app/mamasalanang_gerald/
 Reyes - https://errawrs-v3.netlify.app/reyes_simonejake/
 Victorioso - https://errawrs-v3.netlify.app/victorioso_daniel/
