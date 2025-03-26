@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
+        <meta charset="UTF-8">
         <meta
               name="viewport"
-              content="width=device-width, initial-scale=1.0" />
+              content="width=device-width, initial-scale=1.0">
         <title>Victorioso Daniel Page</title>
         <link
               rel="icon"
               type="image/png"
-              href="./assets/img/profile_dan.png" />
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward_ios" />
+              href="./assets/img/profile_dan.png">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward_ios">
     </head>
-
     <body>
         <div class="nav-container">
-            <input type="checkbox" id="menu_toggle_checkbox" />
+            <input type="checkbox" id="menu_toggle_checkbox">
             <label for="menu_toggle_checkbox" class="menu-toggle">
                 Menu
             </label>
@@ -43,7 +42,7 @@
                 <div class="img-container">
                     <img
                           src="./assets/img/profile_dan.png"
-                          alt="Profile Picture" />
+                          alt="Profile Picture">
                 </div>
             </div>
             <div class="section" id="interests_section">
@@ -164,7 +163,7 @@
                     </div>
                 </div>
                 <div class="comment-section">
-                    <hr />
+                    <hr>
                     <h3>Comments</h3>
                     <div class="comment-box">
                         <span class="commenter">Ivan Delumen</span>
@@ -197,18 +196,18 @@
                     </div>
                 </div>
                 <div class="comment-form">
-                    <form action="" id="comment_form">
+                    <form action="#" id="comment_form">
                         <div class="form-group">
                             <label for="comment_name">Name</label>
                             <input
                                   type="text"
                                   id="comment_name"
-                                  name="comment_name" />
+                                  name="comment_name">
                         </div>
                         <div class="form-group">
                             <label for="comment_box">Comment</label>
-                            <textarea
-                                  name="comment_box"
+                            <textarea 
+                                  name="comment_box" 
                                   id="comment_box">
                             </textarea>
                         </div>
@@ -224,19 +223,19 @@
             <div class="section" id="works_section">
                 <h2>My Works</h2>
                 <div class="work-item">
-                    <a href="project-1.html">Project 1</a>
+                    <a href="project_1.html">Project 1</a>
                 </div>
                 <div class="work-item">
-                    <a href="project-2.html">Project 2</a>
+                    <a href="project_2.html">Project 2</a>
                 </div>
                 <div class="work-item">
-                    <a href="project-3.html">Project 3</a>
+                    <a href="project_3.html">Project 3</a>
                 </div>
                 <div class="work-item">
-                    <a href="project-4.html">Project 4</a>
+                    <a href="project_4.html">Project 4</a>
                 </div>
                 <div class="work-item">
-                    <a href="project-5.html">Project 5</a>
+                    <a href="project_5.html">Project 5</a>
                 </div>
             </div>
             <div class="section" id="testimonials_section">
@@ -277,18 +276,43 @@
             </div>
             <div class="section" id="gallery_section">
                 <h2>Gallery</h2>
-                <div class="card-wrapper">
-                  <ul class="card-list">
-                    <li class="card-item">
-                      <a href="#" class="card-link">
-                        <img src="assets/img/campus_event.jpg" alt="Card Image">
-                        <p class="badge">Computer Society</p>
-                        <button class="card-button material-symbols-outlined">
-                            arrow_forward_ios
-                        </button>
-                      </a>
-                    </li>
-                  </ul>
+                <div class="gallery-container">
+                    <div class="gallery-item">
+                        <img 
+                              src="./assets/img/campus_event.jpg" 
+                              alt="Gallery Image 1">
+                        <span class="gallery-overlay">CS Organization</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img 
+                              src="./assets/img/team_project.jpg" 
+                              alt="Gallery Image 2">
+                        <span class="gallery-overlay">Team Project</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img
+                              src="./assets/img/competition_win.jpg"
+                              alt="Gallery Image 3">
+                        <span class="gallery-overlay">Competition Win</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img 
+                              src="./assets/img/seminar_talk.jpg" 
+                              alt="Gallery Image 4">
+                        <span class="gallery-overlay">Seminar Talk</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img 
+                              src="./assets/img/outdoor_adv.jpg" 
+                              alt="Gallery Image 5">
+                        <span class="gallery-overlay">Outdoor Adventure</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img 
+                              src="./assets/img/coffee_things.jpg" 
+                              alt="Gallery Image 6">
+                        <span class="gallery-overlay">Coffee things</span>
+                    </div>
                 </div>
             </div>
             <div class="section" id="contact_section">
@@ -322,7 +346,7 @@
                                       type="text"
                                       id="name"
                                       name="name"
-                                      required />
+                                      required>
                             </div>
                             <div class="form-group">
                                 <label for="email">Your Email</label>
@@ -330,7 +354,7 @@
                                       type="email"
                                       id="email"
                                       name="email"
-                                      required />
+                                      required>
                             </div>
                             <div class="form-group">
                                 <label for="subject">Subject</label>
@@ -338,14 +362,14 @@
                                       type="text"
                                       id="subject"
                                       name="subject"
-                                      required />
+                                      required>
                             </div>
                             <div class="form-group">
                                 <label for="message">Message</label>
                                 <textarea
                                       id="message"
                                       name="message"
-                                      rows="5" >
+                                      rows="5">
                                 </textarea>
                             </div>
                             <button type="submit" class="submit-btn">

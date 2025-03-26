@@ -329,6 +329,7 @@ h2::after {
     color: var(--accent-color);
 }
 
+/* gallery-section */
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -336,14 +337,46 @@ h2::after {
     width: 100%;
 }
 
-/* gallery-section */
-.card-list .card-tem .card-link {
-  width: 400px;
-  display: block;
-  text-decoration: none;
+.gallery-item {
+    position: relative;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
-.card
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(41, 50, 65, 0.9), transparent);
+    color: #fff;
+    padding: 15px;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+}
 
 /* contact-section */
 .contact-container {
