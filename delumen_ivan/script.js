@@ -12,9 +12,9 @@ textarea.addEventListener("input", checkValue);
 function checkValue() {
     const hasValidInput = input.value.trim() && textarea.value.trim();
 
-        button.disabled = !hasValidInput;
-        button.classList.toggle("disabled", !hasValidInput);
-        button.classList.toggle("enable", hasValidInput);
+    button.disabled = !hasValidInput;
+    button.classList.toggle("disabled", !hasValidInput);
+    button.classList.toggle("enable", hasValidInput);
 }
 
 function addComment() {
