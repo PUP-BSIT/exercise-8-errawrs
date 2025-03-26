@@ -1,9 +1,21 @@
-# Errawrs
-## [Team Website](https://errawrs-v3.netlify.app)
+# Errawrs Website  
 
-## Team Members
+**Welcome to the Errawrs Website!**  
+ 
 
-https://errawrs-v3.netlify.app/delumen_ivan/
-[Mamasalanang, Gerald](https://errawrs-v3.netlify.app/mamasalanang_gerald/)
-[Reyes, Simone Jake](https://errawrs-v3.netlify.app/reyes_simonejake/)
-[Victorioso, Daniel](https://errawrs-v3.netlify.app/victorioso_daniel/)
+🔗 **Live Website:** [Errawrs Website](https://errawrs-v3.netlify.app)  
+
+## 👥 Team Members  
+
+Each team member has their own individual webpage. Click their names to visit:  
+
+- [Ivan Delumen](https://errawrs-v3.netlify.app/delumen_ivan/)  
+- [Gerald Mamasalanang](https://errawrs-v3.netlify.app/mamasalanang_gerald/)  
+- [Simone Jake Reyes](https://errawrs-v3.netlify.app/reyes_simonejake/)  
+- [Daniel Victorioso](https://errawrs-v3.netlify.app/victorioso_daniel/)  
+
+## 🛠️ Technologies Used  
+
+- **Frontend:** HTML, CSS, JavaScript  
+- **Hosting:** Netlify  
+
