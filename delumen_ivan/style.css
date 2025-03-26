@@ -1,338 +1,363 @@
 h1 {
-  background: url(./assets/red.jpg);
-  font-style: oblique;
-  color: red;
-  background-repeat: no-repeat;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0%;
-  margin-bottom: 0%;
+    background: url(./assets/green.jpg);
+    font-style: oblique;
+    color: darkblue;
+    background-repeat: no-repeat;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+p {
+    color: yellow;
+}
+
+strong {
+    color: yellow;
 }
 
 h2 {
-  text-align: center;
-  font-style: oblique;
-  color: red;
+    text-align: center;
+    font-style: oblique;
+    color: darkblue;
 }
 
 body {
-  margin: 0px;
-  background: radial-gradient(circle, rgba(0,0,0,1) 0%, 
-  rgba(255,0,0,1) 100%);
-  box-sizing: border-box;
+    margin: 0px;
+    background-color: green;
+    box-sizing: border-box;
 }
 
 .hobbies-section {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hobbies-container {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.45);
-  color: red;
-  width: 900px;
-  border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: yellow;
+    color: darkblue;
+    width: 900px;
+    border-radius: 20px;
 }
 
 .works-section {
-  padding: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .works-container {
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.45);
-  color: red;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 900px;
-  border-radius: 20px;
+    display: flex;
+    background-color: yellow;
+    color: darkblue;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 900px;
+    border-radius: 20px;
 }
 
 .works-container a {
-  color: red;
+    color: darkblue;
 }
 
 .works-container a:hover {
-  color: blue;
+    color: black;
 }
 
 .testimonials-section {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .testimonials-container {
-  text-align: center;
-  padding: 15px;
-  background-color: rgba(0, 0, 0, 0.45);
-  border-radius: 15px;
-  width: 860px;
-}
-
-.testimonials-container h2 {
-  color: red;
+    text-align: center;
+    padding: 15px;
+    background-color: yellow;
+    border-radius: 15px;
+    width: 900px;
 }
 
 .comment-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .comment-box {
-  width: 250px;
-  background-color: red;
-  padding: 10px;
-  border-radius: 15px;
-  text-align: center;
+    width: 250px;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
 }
 
 .gallery-section {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .gallery-container {
-  background-color: rgba(0, 0, 0, 0.45);
-  border-radius: 15px;
-  width: 900px;
-  padding: 20px;
+    background-color: yellow;
+    border-radius: 15px;
+    width: 900px;
+    padding: 20px;
 }
 
 .img-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 10px;
-  width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    width: 100%;
 }
 
 .img-container img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: transform 0.3s;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
 }
 
 .img-container img:hover {
-  transform: scale(1.10);
+    transform: scale(1.1);
 }
 
 .contact-section {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-container {
-  background-color: rgba(0, 0, 0, 0.45);
-  width: 900px;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background-color: yellow;
+    width: 900px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-container a {
-  color: red;
+    color: darkblue;
 }
 
 .contact-container a:hover {
-  color: blue;
+    color: black;
 }
 
 .goals-section {
-  max-width: 800px;
-  margin: auto;
-  padding: 5px 30px 25px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.45);
-  box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .goals-container {
-  background-color: red;
-  border-radius: 10px;
-  padding: 10px
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 15px;
+    width: 900px;
 }
 
 .comment-section {
-  background-color: rgba(0, 0, 0, 0.45);
-  padding: 20px;
-  border-radius: 10px;
-  margin: 20px 15px 20px 15px;
+    background-color: darkblue;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 15px 20px 15px;
+}
+
+.comment-section h2 {
+    color: yellow;
 }
 
 .goal-item {
-  background-color: rgba(0, 0, 0, 0.5);
-  margin: 15px;
-  border-radius: 10px;
+    background-color: darkblue;
+    margin: 15px;
+    border-radius: 10px;
 }
 
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  border: none;
-  font-size: 18px;
-  box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: red;
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    box-sizing: border-box;
+    background-color: yellow;
+    color: darkblue;
 }
 
 textarea {
-  min-height: 100px;
-  resize: vertical;
+    min-height: 100px;
+    resize: vertical;
 }
 
 button {
-  width: 100%;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  margin: auto;
+    width: 100%;
+    font-size: 15px;
+    color: darkblue;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: auto;
 }
 
-.goal-item {
-  padding: 5px;
-}
-
-.goal-item p {
-  font-size: 20px;
+.goal-item, .goal-item p {
+    padding: 5px;
+    font-size: 20px;
 }
 
 .teammate-comment {
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  box-sizing: border-box;
-  flex-wrap: wrap;
+    padding: 10px;
+    background-color: darkblue;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.teammate-comment p {
+    color: darkblue;
+}
+
+.teammate-comment strong {
+    color: darkblue;
 }
 
 .comment-item {
-  width: 200px;
-  background-color: red;
-  padding: 10px;
-  border-radius: 15px;
-  text-align: center;
-  box-sizing: border-box;
-  margin-bottom: 10px;
+    width: 200px;
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.enable {
+    background-color: yellow;
+    cursor: pointer;
 }
 
 /* Mobile S */
 @media (max-width: 320px) {
-  h1 {
-    height: 70px;
-    font-size: 24px;
-  }
-  
-  .hobbies-container,
-  .works-container,
-  .testimonials-container,
-  .gallery-container,
-  .contact-container,
-  .goals-container {
-    width: 90%;
-    padding: 10px;
-  }
-  
-  .img-container {
-    grid-template-columns: 1fr;
-  }
+    h1 {
+        height: 70px;
+        font-size: 24px;
+    }
 
-  .teammate-comment {
-    width: 90%;
-    gap: 10px;
-    margin: auto;
-  }
+    .hobbies-container,
+    .works-container,
+    .testimonials-container,
+    .gallery-container,
+    .contact-container,
+    .goals-container {
+        width: 90%;
+        padding: 10px;
+    }
 
-  .comment-box,
-  .comment-item {
-    width: 100%;
-  }
+    .img-container {
+        grid-template-columns: 1fr;
+    }
+
+    .teammate-comment {
+        width: 90%;
+        gap: 10px;
+        margin: auto;
+    }
+
+    .comment-box,
+    .comment-item {
+        width: 100%;
+    }
 }
 
 /* Mobile M */
 @media (min-width: 321px) and (max-width: 375px) {
-  h1 {
-    height: 80px;
-    font-size: 26px;
-  }
-  
-  .hobbies-container,
-  .works-container,
-  .testimonials-container,
-  .gallery-container,
-  .contact-container,
-  .goals-container {
-    width: 90%;
-    padding: 12px;
-  }
+    h1 {
+        height: 80px;
+        font-size: 26px;
+    }
 
-  .img-container {
-    grid-template-columns: 1fr;
-  }
+    .hobbies-container,
+    .works-container,
+    .testimonials-container,
+    .gallery-container,
+    .contact-container,
+    .goals-container {
+        width: 90%;
+        padding: 12px;
+    }
 
-  .teammate-comment {
-    width: 90%;
-  }
+    .img-container {
+        grid-template-columns: 1fr;
+    }
 
-  .comment-box,
-  .comment-item {
-    width: 90%;
-  }
+    .teammate-comment {
+        width: 90%;
+    }
+
+    .comment-box,
+    .comment-item {
+        width: 90%;
+    }
 }
 
 /* Mobile L */
 @media (min-width: 376px) and (max-width: 425px) {
-  h1 {
-    height: 90px;
-    font-size: 28px;
-  }
+    h1 {
+        height: 90px;
+        font-size: 28px;
+    }
 
-  .hobbies-container,
-  .works-container,
-  .testimonials-container,
-  .gallery-container,
-  .contact-container,
-  .goals-container {
-    width: 90%;
-    padding: 15px;
-  }
+    .hobbies-container,
+    .works-container,
+    .testimonials-container,
+    .gallery-container,
+    .contact-container,
+    .goals-container {
+        width: 90%;
+        padding: 15px;
+    }
 
-  .img-container {
-    grid-template-columns: 1fr;
-  }
+    .img-container {
+        grid-template-columns: 1fr;
+    }
 
-  .teammate-comment {
-    width: 90%;
-    gap: 15px;
-  }
+    .teammate-comment {
+        width: 90%;
+        gap: 15px;
+    }
 
-  .comment-box,
-  .comment-item {
-    width: 90%;
-  }
+    .comment-box,
+    .comment-item {
+        width: 90%;
+    }
 }

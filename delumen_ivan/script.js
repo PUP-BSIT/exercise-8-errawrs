@@ -1,22 +1,37 @@
 let input = document.querySelector(".name");
-let button = document.querySelector(".submitButton");
 let textarea = document.querySelector("textarea");
+let button = document.querySelector(".submit-button");
+let commentSection = document.querySelector(".teammate-comment");
 
-button.disabled = true;
-button.style.backgroundColor = "#cccccc";
-button.style.cursor = "not-allowed";
+button.classList.add("disabled");
 
-input.addEventListener("change", stateHandle);
-textarea.addEventListener("input", stateHandle);
+button.addEventListener("click", addComment);
+input.addEventListener("input", checkValue);
+textarea.addEventListener("input", checkValue);
 
-function stateHandle() {
-  if (input.value === "" || textarea.value === "") {
-    button.disabled = true;
-    button.style.backgroundColor = "#cccccc";
-    button.style.cursor = "not-allowed";
-  } else {
-    button.disabled = false;
-    button.style.backgroundColor = "#FF0000";
-    button.style.cursor = "pointer";
-  }
+function checkValue() {
+    const hasValidInput = input.value.trim() && textarea.value.trim();
+
+        button.disabled = !hasValidInput;
+        button.classList.toggle("disabled", !hasValidInput);
+        button.classList.toggle("enable", hasValidInput);
+}
+
+function addComment() {
+    let commentContainer = document.createElement("div");
+    commentContainer.classList.add("comment-item");
+    commentSection.append(commentContainer);
+
+    let commentText = document.createElement("p");
+    commentText.innerHTML = textarea.value;
+    commentContainer.append(commentText);
+
+    let commentName = document.createElement("strong");
+    commentName.innerHTML = input.value;
+    commentContainer.append(commentName);
+
+    input.value = "";
+    textarea.value = "";
+
+    checkValue();
 }
